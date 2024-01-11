@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="tokobuahDataSet4" targetNamespace="http://tempuri.org/tokobuahDataSet4.xsd" xmlns:mstns="http://tempuri.org/tokobuahDataSet4.xsd" xmlns="http://tempuri.org/tokobuahDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="tokobuahConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="tokobuahConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.aplikasi_tokobuah_UAS_ABD.Properties.Settings.GlobalReference.Default.tokobuahConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_stokTableAdapter" GeneratorDataComponentClassName="view_stokTableAdapter" Name="view_stok" UserDataComponentName="view_stokTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="tokobuahConnectionString (Settings)" DbObjectName="tokobuah.dbo.view_stok" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [nama buah], stok FROM dbo.view_stok</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nama buah" DataSetColumn="nama buah" />
+              <Mapping SourceColumn="stok" DataSetColumn="stok" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="tokobuahDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="tokobuahDataSet4" msprop:Generator_UserDSName="tokobuahDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_stok" msprop:Generator_TableClassName="view_stokDataTable" msprop:Generator_TableVarName="tableview_stok" msprop:Generator_TablePropName="view_stok" msprop:Generator_RowDeletingName="view_stokRowDeleting" msprop:Generator_RowChangingName="view_stokRowChanging" msprop:Generator_RowEvHandlerName="view_stokRowChangeEventHandler" msprop:Generator_RowDeletedName="view_stokRowDeleted" msprop:Generator_UserTableName="view_stok" msprop:Generator_RowChangedName="view_stokRowChanged" msprop:Generator_RowEvArgName="view_stokRowChangeEvent" msprop:Generator_RowClassName="view_stokRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nama_x0020_buah" msprop:Generator_ColumnVarNameInTable="columnnama_buah" msprop:Generator_ColumnPropNameInRow="nama_buah" msprop:Generator_ColumnPropNameInTable="nama_buahColumn" msprop:Generator_UserColumnName="nama buah" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stok" msprop:Generator_ColumnVarNameInTable="columnstok" msprop:Generator_ColumnPropNameInRow="stok" msprop:Generator_ColumnPropNameInTable="stokColumn" msprop:Generator_UserColumnName="stok" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

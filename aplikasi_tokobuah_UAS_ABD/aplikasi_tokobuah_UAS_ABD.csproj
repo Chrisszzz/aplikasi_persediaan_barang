@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3FA1580-EC84-4C8B-9292-4B6483DF336F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>aplikasi_tokobuah_UAS_ABD</RootNamespace>
+    <AssemblyName>aplikasi_tokobuah_UAS_ABD</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>70AE4E63B852844ED81B4FBE4AB902DD8CA802E0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>aplikasi_tokobuah_UAS_ABD_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="filterbuah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filterbuah.Designer.cs">
+      <DependentUpon>filterbuah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filterpembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filterpembelian.Designer.cs">
+      <DependentUpon>filterpembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filterpenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filterpenjualan.Designer.cs">
+      <DependentUpon>filterpenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan pembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan pembelian.Designer.cs">
+      <DependentUpon>Laporan pembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="laporanpenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporanpenjualan.Designer.cs">
+      <DependentUpon>laporanpenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanStok.Designer.cs">
+      <DependentUpon>LaporanStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notabeli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notabeli.Designer.cs">
+      <DependentUpon>notabeli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notajual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notajual.Designer.cs">
+      <DependentUpon>notajual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tabel.cs" />
+    <Compile Include="tokobuahDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tokobuahDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tokobuahDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tokobuahDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tokobuahDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tokobuahDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tokobuahDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tokobuahDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tokobuahDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tokobuahDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tokobuahDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tokobuahDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tokobuahDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tokobuahDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tokobuahDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tokobuahDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tokobuahDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tokobuahDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tokobuahDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tokobuahDataSet9.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="filterbuah.resx">
+      <DependentUpon>filterbuah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filterpembelian.resx">
+      <DependentUpon>filterpembelian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filterpenjualan.resx">
+      <DependentUpon>filterpenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan pembelian.rdlc" />
+    <EmbeddedResource Include="Laporan pembelian.resx">
+      <DependentUpon>Laporan pembelian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan stok.rdlc" />
+    <EmbeddedResource Include="laporanpenjualan.rdlc" />
+    <EmbeddedResource Include="laporanpenjualan.resx">
+      <DependentUpon>laporanpenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanStok.resx">
+      <DependentUpon>LaporanStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notabeli.resx">
+      <DependentUpon>notabeli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notajual.resx">
+      <DependentUpon>notajual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="aplikasi_tokobuah_UAS_ABD_TemporaryKey.pfx" />
+    <None Include="app.config" />
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="tokobuahDataSet.xsc">
+      <DependentUpon>tokobuahDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tokobuahDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tokobuahDataSet.xss">
+      <DependentUpon>tokobuahDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet1.xsc">
+      <DependentUpon>tokobuahDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tokobuahDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tokobuahDataSet1.xss">
+      <DependentUpon>tokobuahDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet2.xsc">
+      <DependentUpon>tokobuahDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tokobuahDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tokobuahDataSet2.xss">
+      <DependentUpon>tokobuahDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet3.xsc">
+      <DependentUpon>tokobuahDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tokobuahDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tokobuahDataSet3.xss">
+      <DependentUpon>tokobuahDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet4.xsc">
+      <DependentUpon>tokobuahDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tokobuahDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tokobuahDataSet4.xss">
+      <DependentUpon>tokobuahDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet5.xsc">
+      <DependentUpon>tokobuahDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tokobuahDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tokobuahDataSet5.xss">
+      <DependentUpon>tokobuahDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet6.xsc">
+      <DependentUpon>tokobuahDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tokobuahDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tokobuahDataSet6.xss">
+      <DependentUpon>tokobuahDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet7.xsc">
+      <DependentUpon>tokobuahDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tokobuahDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tokobuahDataSet7.xss">
+      <DependentUpon>tokobuahDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet8.xsc">
+      <DependentUpon>tokobuahDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tokobuahDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tokobuahDataSet8.xss">
+      <DependentUpon>tokobuahDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet9.xsc">
+      <DependentUpon>tokobuahDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="tokobuahDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tokobuahDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tokobuahDataSet9.xss">
+      <DependentUpon>tokobuahDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buah back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buah_back-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first_page_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last_page_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_before_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_next_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buah_back_1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buah_back-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc_menu-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc_menu-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc_menu-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

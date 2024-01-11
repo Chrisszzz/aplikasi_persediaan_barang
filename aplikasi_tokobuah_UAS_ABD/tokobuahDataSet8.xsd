@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="tokobuahDataSet8" targetNamespace="http://tempuri.org/tokobuahDataSet8.xsd" xmlns:mstns="http://tempuri.org/tokobuahDataSet8.xsd" xmlns="http://tempuri.org/tokobuahDataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="tokobuahConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="tokobuahConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.aplikasi_tokobuah_UAS_ABD.Properties.Settings.GlobalReference.Default.tokobuahConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_customerTableAdapter" GeneratorDataComponentClassName="view_customerTableAdapter" Name="view_customer" UserDataComponentName="view_customerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="tokobuahConnectionString (Settings)" DbObjectName="tokobuah.dbo.view_customer" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT kdcustomer, nmcustomer, alamat, telpon FROM dbo.view_customer</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="kdcustomer" DataSetColumn="kdcustomer" />
+              <Mapping SourceColumn="nmcustomer" DataSetColumn="nmcustomer" />
+              <Mapping SourceColumn="alamat" DataSetColumn="alamat" />
+              <Mapping SourceColumn="telpon" DataSetColumn="telpon" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="tokobuahDataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="tokobuahDataSet8" msprop:Generator_UserDSName="tokobuahDataSet8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_customer" msprop:Generator_TableClassName="view_customerDataTable" msprop:Generator_TableVarName="tableview_customer" msprop:Generator_TablePropName="view_customer" msprop:Generator_RowDeletingName="view_customerRowDeleting" msprop:Generator_RowChangingName="view_customerRowChanging" msprop:Generator_RowEvHandlerName="view_customerRowChangeEventHandler" msprop:Generator_RowDeletedName="view_customerRowDeleted" msprop:Generator_UserTableName="view_customer" msprop:Generator_RowChangedName="view_customerRowChanged" msprop:Generator_RowEvArgName="view_customerRowChangeEvent" msprop:Generator_RowClassName="view_customerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kdcustomer" msprop:Generator_ColumnVarNameInTable="columnkdcustomer" msprop:Generator_ColumnPropNameInRow="kdcustomer" msprop:Generator_ColumnPropNameInTable="kdcustomerColumn" msprop:Generator_UserColumnName="kdcustomer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nmcustomer" msprop:Generator_ColumnVarNameInTable="columnnmcustomer" msprop:Generator_ColumnPropNameInRow="nmcustomer" msprop:Generator_ColumnPropNameInTable="nmcustomerColumn" msprop:Generator_UserColumnName="nmcustomer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="alamat" msprop:Generator_ColumnVarNameInTable="columnalamat" msprop:Generator_ColumnPropNameInRow="alamat" msprop:Generator_ColumnPropNameInTable="alamatColumn" msprop:Generator_UserColumnName="alamat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="telpon" msprop:Generator_ColumnVarNameInTable="columntelpon" msprop:Generator_ColumnPropNameInRow="telpon" msprop:Generator_ColumnPropNameInTable="telponColumn" msprop:Generator_UserColumnName="telpon" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:view_customer" />
+      <xs:field xpath="mstns:kdcustomer" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
